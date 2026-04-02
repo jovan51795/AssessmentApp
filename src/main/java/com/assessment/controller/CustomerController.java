@@ -22,7 +22,6 @@ public class CustomerController {
     @PostMapping
     public ResponseEntity<ApiResponse> create(@Valid @RequestBody CustomerDto customerDto) {
         Long id = customerService.create(customerDto);
-        new ApiResponse();
         ApiResponse response;
         if(id == null) {
             response = new ApiResponse(  HttpStatus.CONFLICT.value(), "Customer account already exist");
