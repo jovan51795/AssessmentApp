@@ -1,6 +1,5 @@
 package com.assessment.model;
 
-import com.assessment.dto.CustomerRequestDto;
 import com.assessment.enums.AccountType;
 import com.assessment.response.ApiResponse;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
